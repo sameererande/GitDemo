@@ -62,5 +62,20 @@ public class AbstractComponent {
 		return orderPage;
 		
 	}
+	
+	public CartPage goToCartPage1()
+	{
+		cartHeader.click();
+		CartPage cartPage=new CartPage(driver);
+		return cartPage;
+		
+	}
+	public OrderPage goToOrderPage1()
+	{
+		ordersHeader.click();
+		OrderPage orderPage=new OrderPage(driver);
+		return orderPage;
+		
+	}
 
 }
